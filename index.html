@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Previsão de tempo</title>
+    <script src="scripts.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +18,26 @@
 <body>
 
     <div class="caixa-maior">
-        <input placeholder="Digite o nome da cidade" type="text">
-        <button>Buscar</button>
+        <input class="input-cidade" placeholder="Digite o nome da cidade" type="text">
+        <button class="botao-buscar" onclick="cliqueiNoBotao()">
+            <img class="img-buscar" src="img/lupa.svg" alt="">
+        </button>
 
-        <h2>Tempo em São Paulo</h2>
+        <div class="caixa-media">
 
-        <p>21 C</p>
+        <h2 class="clima-cidade">Tempo em São Paulo</h2>
 
-        <img src="img/nuvem.png">
-        <p>Nublado</p>
+        <p class="temp">21° C</p>
 
-        <p>Umidade 76%</p>
+        <div class="caixa-menor">
+            <img class="icone-nuvem" src="https://openweathermap.org/img/wn/04n.png">
+            <p class="prev">Nublado</p>
 
+        </div>
+
+        <p class="umi">Umidade 76%</p>
+
+    </div>
     </div>
 
 </body>
